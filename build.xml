@@ -1,1 +1,14 @@
-
+<project default="copmile">
+  <property name ="src.java.dir"location="./src/software"/>
+  <property name ="result.dir"location="./target"/>
+   <property name ="result.software.dir"location=${result.dir}/classes"/>
+                
+                                                          
+  <target name="compile">
+                        <mkdir dir="${result.software.dir}"/>
+                        <javac srcdir="${src.java.dir}" destdir="${result.software.dir}" debug="true" icludeantruntime="false">
+                        </javac>                                                                                                       
+                                                                                                                           
+                                                                                                                              
+  </target>
+  </project>                                                                                                                           
